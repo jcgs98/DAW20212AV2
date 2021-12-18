@@ -31,7 +31,7 @@
 					<a href="incluirOnibus.php" class="btn btn-primary">Incluir	onibus	</a>
 					<a href="alterOnibus.php" 	class="btn btn-primary">Alterar	onibus	</a>
 					<a href="listaOnibus.php"	class="btn btn-primary">Listar	onibus	</a>	
-					<a href="index.php"			class="btn btn-primary">Início			</a>
+					<a href="index.php"			class="btn btn-primary">Inicio			</a>
 				</div>
 			</div>
 		</div>	
@@ -43,9 +43,9 @@
                         <input type="text" name="id" placeholder="Buscar por ID"> <br><br>
                         <input type="text" name="chassis" placeholder="Buscar por CHASSIS"> <br><br>
                         <input type="text" name="placa" placeholder="Buscar por PLACA"> <br><br>
-                        <input type="text" name="qtdAssentos"placeholder="Nova Quantidade de Assentos:">                        
-                        <input type="text" name="temBanheiro"placeholder="Tem Banheiro? (S)im ou (N)ão?">
-						<input type="text" name="temArCondicionado"placeholder="Tem Ar Condicionado? (S)im ou (N)ão?">	<br><br>
+                        <input type="text" name="qtdAssentos"placeholder="Qtde de Assentos:">                        
+                        <input type="text" name="temBanheiro"placeholder="Banheiro? (S/N)">
+						<input type="text" name="temArCondicionado"placeholder="Ar Condicionado? (S/N)">	<br><br>
                         <input type="submit" 	name="altera"	class		=	"btn btn-primary"		value	=	"Atualizar Onibus">                        
                     </form>                    
                 </div>                

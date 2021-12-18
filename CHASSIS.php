@@ -14,10 +14,11 @@
 		
 		<div class="container">			
 			<div class="card text-center mt-1">				
-				<div class="card-body">					
+				<div class="card-body">
+					<a href="ID.php" class="btn btn-primary">Ordenar por ID</a>
 					<a href="MARCA.php" 	class="btn btn-primary">Ordenar por MARCA	</a>
-					<a href="MODELO.php"	class="btn btn-primary">Ordenar por MODELO	</a>	
-					<a href="CHASSIS.php" class="btn btn-primary">Ordenar por CHASSIS </a>					
+					<a href="MODELO.php"	class="btn btn-primary">Ordenar por MODELO	</a>						
+					<a href="PLACA.php" class="btn btn-primary">Ordenar por PLACA </a>					
 				</div>				
 			</div>
 		</div>
@@ -43,7 +44,7 @@
                         </thead>
                         <tbody>
                             <?php
-                                $Exibe = mysqli_query($con, "SELECT * FROM onibus ORDER BY id");
+                                $Exibe = mysqli_query($con, "SELECT * FROM onibus ORDER BY chassis");
                                 while($r = mysqli_fetch_array($Exibe)):
 							?>
                                     <tr>

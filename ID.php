@@ -14,7 +14,8 @@
 		
 		<div class="container">			
 			<div class="card text-center mt-1">				
-				<div class="card-body">					
+				<div class="card-body">
+					<a href="PLACA.php" class="btn btn-primary">Ordenar por PLACA </a>					
 					<a href="MARCA.php" 	class="btn btn-primary">Ordenar por MARCA	</a>
 					<a href="MODELO.php"	class="btn btn-primary">Ordenar por MODELO	</a>	
 					<a href="CHASSIS.php" class="btn btn-primary">Ordenar por CHASSIS </a>					
