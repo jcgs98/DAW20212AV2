@@ -1,5 +1,5 @@
 <?php
-	$con = mysqli_connect("localhost", "root", "", "onibus");
+	$con = mysqli_connect("localhost", "root", "", "av1");
 	
 	if (isset($_POST['altera'])) {
 	    $id = $_POST['id'];

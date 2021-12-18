@@ -8,7 +8,7 @@
 			<div class="card text-center mt-1">
 				<div class="card-body">					
 					<a href="incluirOnibus.php" class="btn btn-primary">Incluir	onibus	</a>
-					<a href="alterOnibus.php" 	class="btn btn-primary">Alterar	onibus	</a>
+					<a href="alteraOnibus.php" 	class="btn btn-primary">Alterar	onibus	</a>
 					<a href="listaOnibus.php"	class="btn btn-primary">Listar	onibus	</a>		
 				</div>
 			</div>
@@ -16,7 +16,7 @@
 		<div class="container">
 		<div class="card text-center mt-1">
 			<div class="card-body">
-				<form class="mt-1" method="POST" action="criarCliente.php">	
+				<form class="mt-1" method="POST" action="incluirOnibus.php">	
 					<input type="text"		name="id"					placeholder	=	"id">
 					<input type="text"		name="marca"				placeholder	=	"marca">
 					<input type="text"		name="modelo"				placeholder	=	"modelo"><br><br>
@@ -25,12 +25,12 @@
 					<input type="text"		name="temArCondicionado"	placeholder	=	"temArCondicionado">		<br><br>
 					<input type="text"		name="chassis"				placeholder	=	"chassis">		<br><br>
 					<input type="text"		name="placa"				placeholder	=	"placa">		<br><br>
-					<input type="submit" 	name="submit"				class		=	"btn btn-primary"		value	=	"Incluir Ônibus">
+					<input type="submit" 	name="submit"				class		=	"btn btn-primary"		value	=	"Incluir Onibus">
 				</form>
 			</div>
 		</div>		
 					<?php
-						$con = mysqli_connect("localhost", "root", "", "onibus");                     
+						$con = mysqli_connect("localhost", "root", "", "av1");                     
 						if (($_POST) && ($_POST['submit'])) {
 						    $id                   = $_POST['id'];
 						    $marca                = $_POST['marca'];
@@ -41,7 +41,7 @@
 						    $chassis              = $_POST['chassis'];
 						    $placa		          = $_POST['placa'];
 						    echo($id!=""&&$marca!=""&&$modelo!=""&&$qtdAssentos!=""&&$temBanheiro!=""&&$temArCondicionado!=""&&$chassis!=""&&$placa!="")?
-								(mysqli_query($con, "	INSERT INTO clientes (marca, modelo, qtdAssentos, temBanheiro, temArCondicionado, chassis, placa )
+								(mysqli_query($con, "	INSERT INTO onibus (id, marca, modelo, qtdAssentos, temBanheiro, temArCondicionado, chassis, placa )
 								    VALUES ('$id','$marca','$modelo','$qtdAssentos', '$temBanheiro', '$temArCondicionado', '$chassis', '$placa')"))?
 								"<script>alert('Ônibus inserido com sucesso!')</script>":
 								"<script>alert('Erro, ônibus não inserido!')</script>":
